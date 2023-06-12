@@ -8,7 +8,7 @@ from django.views.generic.edit import CreateView
 class AddressView(CreateView):
 
     model = Address
-    fields = ['address']
+    fields = ['address', 'name']
     template_name = 'addresses/home.html'
     success_url = '/'
 
